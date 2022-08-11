@@ -1,0 +1,9 @@
+
+    Directory: D:\Scripts\BCScripts
+
+[32;1mMode                 LastWriteTime         Length Name[0m
+[32;1m----                 -------------         ------ ----[0m
+-a---          11/08/2022 12:33 pm           1464 Learning-Powershell-Phrases.ps1
+-a---          11/08/2022 12:46 pm              0 outfile.txt
+-a---          11/08/2022 12:27 pm           1807 readme.md
+
