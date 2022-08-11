@@ -12,6 +12,12 @@ Contents:
 Learning Materials:
 - John Hammond's video series on learning Powershell basics: https://www.youtube.com/playlist?list=PL1H1sBF1VAKXqO_N3ZNP0aL15miJcUhw7
 
+GIT Notes:
+If you are getting error messages when trying to commit using Git or run Git-Bash then you probably need to disable ForceRelocateImages with the below powershell commands:
+Get-Item -Path "C:\Program Files\Git\usr\bin\*.exe" | %{ Set-ProcessMitigation -Name $_.Name -Disable ForceRelocateImages }
+Get-Item -Path "C:\Program Files\Git\bin\*.exe" | %{ Set-ProcessMitigation -Name $_.Name -Disable ForceRelocateImages }
+Get-Item -Path "C:\Program Files\Git\*.exe" | %{ Set-ProcessMitigation -Name $_.Name -Disable ForceRelocateImages }
+Source: https://stackoverflow.com/questions/34959583/github-cygwin-error-cygheap-base-mismatch-detected
 
 
 Powershell Notes:
