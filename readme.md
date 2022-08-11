@@ -11,11 +11,13 @@ Contents:
 
 Resources:
 - John Hammond's video series on learning Powershell basics: https://www.youtube.com/playlist?list=PL1H1sBF1VAKXqO_N3ZNP0aL15miJcUhw7
-- https://ss64.com
+- Awesome reference for Powershell & other scripting languages: https://ss64.com
+- Really cool website for learning Git: https://learngitbranching.js.org/
+- list of all Microsoft learning paths for Powershell: https://docs.microsoft.com/en-us/learn/browse/?terms=PowerShell&resource_type=learning%20path
 
 
-GIT Notes:
-If you are getting error messages when trying to commit using Git or run Git-Bash then you probably need to disable ForceRelocateImages with the below powershell commands:
+Git Notes:
+- If you are getting error messages when trying to commit using Git or run Git-Bash then you probably need to disable ForceRelocateImages with the below powershell commands:
 Get-Item -Path "C:\Program Files\Git\usr\bin\*.exe" | %{ Set-ProcessMitigation -Name $_.Name -Disable ForceRelocateImages }
 Get-Item -Path "C:\Program Files\Git\bin\*.exe" | %{ Set-ProcessMitigation -Name $_.Name -Disable ForceRelocateImages }
 Get-Item -Path "C:\Program Files\Git\*.exe" | %{ Set-ProcessMitigation -Name $_.Name -Disable ForceRelocateImages }
