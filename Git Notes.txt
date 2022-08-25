@@ -1,0 +1,27 @@
+Make changes
+add checkin note
+stage changes - non-staged changes won't be checked in
+checks in locally
+
+use main as trunk
+
+pull first
+modify a file
+stage changes
+add a comment
+commit & push
+
+Pull
+Branch 
+modify
+stage
+comment
+push Branch
+
+Pull Request
+review
+resolve merge conflicts
+complete/abandon
+
+
+VOD: https://datatorque-my.sharepoint.com/personal/rautie_rautenbach_datatorque_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frautie%5Frautenbach%5Fdatatorque%5Fcom%2FDocuments%2FRecordings%2FGit%20training%20for%20release%20scripts%2D20220825%5F101705%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Frautie%5Frautenbach%5Fdatatorque%5Fcom%2FDocuments%2FRecordings&ga=1
