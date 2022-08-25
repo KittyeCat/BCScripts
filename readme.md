@@ -13,6 +13,7 @@ Resources:
 - John Hammond's video series on learning Powershell basics: https://www.youtube.com/playlist?list=PL1H1sBF1VAKXqO_N3ZNP0aL15miJcUhw7
 - Awesome reference for Powershell & other scripting languages: https://ss64.com
 - Really cool website for learning Git: https://learngitbranching.js.org/
+- Git docs: https://git-scm.com/book/en/v2
 - list of all Microsoft learning paths for Powershell: https://docs.microsoft.com/en-us/learn/browse/?terms=PowerShell&resource_type=learning%20path
 
 
