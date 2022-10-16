@@ -1,0 +1,17 @@
+{ 
+    "Shopkeeper": { 
+        "givenName": "John",
+        "surname": "Doe", 
+        "department": "Finance" 
+    }, 
+    "jdoe2": { 
+        "givenName": "Jane",
+        "surname": "Doe", 
+        "department": "Marketing" 
+    }, 
+    "asmith": { 
+        "givenName": "Alice",
+        "surname": "Smith", 
+        "department": "IT" 
+    } 
+}

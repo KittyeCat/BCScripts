@@ -1,0 +1,10 @@
+// 52037 - 0xCafe,52077 - 0xCafe,52077 - 0xCafe,52066 - 0xCafe,52046 - 0xCafe,52063 - 0xCafe,52081 - 0xCafe,52081 - 0xCafe,52085 - 0xCafe,52077 - 0xCafe,52080 - 0xCafe,52066 - 0xCafe
+
+const v = 'test';
+const p = Array.from(v).map(a => 0xCafe + a.charCodeAt(0));
+console.log(0xCafe);
+
+
+
+
+console.log(String.fromCharCode(52037 - 0xCafe,52077 - 0xCafe,52077 - 0xCafe,52066 - 0xCafe,52046 - 0xCafe,52063 - 0xCafe,52081 - 0xCafe,52081 - 0xCafe,52085 - 0xCafe,52077 - 0xCafe,52080 - 0xCafe,52066 - 0xCafe));
