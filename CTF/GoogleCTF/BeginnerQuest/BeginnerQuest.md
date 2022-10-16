@@ -1,4 +1,5 @@
 BeginnerQuest CTF by google :)
+https://capturetheflag.withgoogle.com/beginners-quest
 
 Active Key: NKPNJRCH
 
