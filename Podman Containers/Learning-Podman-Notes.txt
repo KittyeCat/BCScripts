@@ -1,0 +1,66 @@
+Notes for Podman demo via RHEL workshop
+
+NOTE: All commands etc are for RHEL, but should work on other OSs
+
+use your package manager to install the following: podman buildah skopeo
+
+Podman - core tool for managing single node containers (OpenShift is for cluster orchestration etc) equivalent to docker
+buildah - core packaging and building tool for new containers. can be accessed through podman but needs to be installed separately
+skopeo - for package signing and validation??
+
+basic commands:
+-load a container from a dockerhub registry image
+container=$(buildah from docker.io/library/httpd:latest)
+
+- "container" is the variable the currently building container is stored in
+- "buildah from" is the command to pull an image and build it 
+- "docker.io/library/httpd:latest" is the path to the image registry and the ":" denotes which release stream to grab
+
+
+Now we can run commands against our new container using buildah run:
+
+buildah run $container ls
+
+buildah run $container mkdir -p /usr/local/apache2/htdocs
+
+echo "<html><body><h1>Welcome to my web service</h1></body></html>" | buildah run $container tee /usr/local/apache2/htdocs/index.html
+
+
+and finally, we can save a new container image based on the changes we made:
+
+buildah commit $container mywebapp
+
+
+We can also push one of our committed images to a registry, e.g. docker.io:
+
+to connect to the registry:
+buildah login docker.io
+
+fill out login details
+
+
+to push to logged in registry:
+buildah push mywebapp:latest kittyecat/podman-demo-webapp:latest
+
+to pull from the registry to create a local container:
+podman pull docker.io/kittyecat/podman-demo-webapp:latest
+
+to list all local stored images:
+podman images
+
+to list all local containers that are running:
+podman ps
+
+
+and then to run it as a container:
+podman run -d --name mywebapp-demo -p 8080:80 docker.io/kittyecat/podman-demo-webapp:latest
+
+
+can test our app is running by checking the local url:
+curl 0.0.0.0:8080
+
+
+
+Because podman is not a managed cluster we have to use systemd files to keep the containers running through reboots etc of the host machine. Podman allows us to create the systemd file automatically which is pretty cool!
+
+
